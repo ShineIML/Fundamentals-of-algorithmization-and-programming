@@ -2,12 +2,11 @@
 
 Karel the robot is in general an educational programming language for beginners,
 created by Richard E. Pattis. This is implementation of Karel the Robot for C
-programming language. More info at https://en.wikipedia.org/wiki/Karel_(programming_language)
-
+programming language. More info at https://en.wikipedia.org/wiki/Karel_(programming_language).
 
 ## Usage
 
-Firstly, you need to install open source university API, called Karel the Robot to make project work properly.
+Firstly, you need to install open source university API, called Karel the Robot to make project work properly from:
 https://git.kpi.fei.tuke.sk/kpi/karel-the-robot
 
 To compile program you can use two different ways:
@@ -17,5 +16,9 @@ make task
 ```
 2.  Using command line in bash:
 ```bash
-gcc -std=c11 -Werror -Wall -lsuperkarel -lcurses
+gcc task.c -o task -std=c11 -Werror -Wall -lsuperkarel -lcurses
 ```
+
+## Dependencies
+
+To compile the tasks, you need to have a copy of the `ncurses` library and `gcc-package`.
