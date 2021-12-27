@@ -11,12 +11,12 @@ void find_exit_checkpoint();
 int main() {
     turn_on("olympics.kw"); // Turn on the field map.
     set_step_delay(SPEED); // Assigning karel's speed on the field
-
-	find_checkpoint(); // Function to find first checkpoint.
-	find_exit_checkpoint(); // Function to find exit checkpoint.
-
-	turn_off();
-	return 0;
+    
+    find_checkpoint(); // Function to find first checkpoint.
+    find_exit_checkpoint(); // Function to find exit checkpoint.
+    
+    turn_off();
+    return 0;
 }
 
 /*
@@ -25,20 +25,20 @@ int main() {
 */
 void turn_right() {
     set_step_delay(SPEED_EQUALS_NULL);
-	turn_left();
-	turn_left();
-	set_step_delay(SPEED);
-	turn_left();
+    turn_left();
+    turn_left();
+    set_step_delay(SPEED);
+    turn_left();
 }
 
 /*
     Similar to previous function, now it uses two left turns to turn Karel backwards. 
 */
 void turn_backwards() {
-	set_step_delay(SPEED_EQUALS_NULL);
-	turn_left();
-	turn_left();
-	set_step_delay(SPEED);
+    set_step_delay(SPEED_EQUALS_NULL);
+    turn_left();
+    turn_left();
+    set_step_delay(SPEED);
 }
 
 /*
@@ -74,16 +74,16 @@ void check_position() {
 */
 void find_checkpoint() {
     put_beeper();
-	while (no_beepers_in_bag()) {
-		check_position();
-		if (front_is_clear()) {
-			step();
-		}
-		if (beepers_present()) {
-			pick_beeper();
-			turn_backwards();
-		}
-	}
+    while (no_beepers_in_bag()) {
+        check_position();
+        if (front_is_clear()) {
+            step();
+        }
+        if (beepers_present()) {
+            pick_beeper();
+            turn_backwards();
+        }
+    }
 }
 
 
@@ -94,17 +94,17 @@ void find_checkpoint() {
     In this case, a similar algorithm was developed, only now, with the condition that Karl has a checkpoint thing in his backpack
 */
 void find_exit_checkpoint() {
-	while (beepers_in_bag()) {
-		check_position();
-		if (front_is_clear()) {
-			step();
-		}
-		if (beepers_present()) {
-			pick_beeper();
-			while (not_facing_west()) {
-				turn_right();
-			}
-			break;
-		}
-	}
+    while (beepers_in_bag()) {
+        check_position();
+        if (front_is_clear()) {
+            step();
+        }
+        if (beepers_present()) {
+            pick_beeper();
+            while (not_facing_west()) {
+                turn_right();
+            }
+            break;
+        }
+    }
 }
