@@ -1,7 +1,9 @@
 ## Karel the Robot
 
 Karel the robot is in general an educational programming language for beginners,
-created by Richard E. Pattis. This is implementation of [Karel the Robot for C
+created by Richard E. Pattis. 
+
+This is implementation of [Karel the Robot for C
 programming language](https://en.wikipedia.org/wiki/Karel_(programming_language)).
 
 
