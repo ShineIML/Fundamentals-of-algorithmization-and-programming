@@ -1,7 +1,7 @@
 ## Fundamentals of algorithmization and programming 
 Technical University of Kosice, Slovakia.
 
-Written by Ihor Rabin
+Written by Igor Rabin.
 
 ## About
 Projects that I worked on at the university. All projects were written in pure C language using some university APIs.
