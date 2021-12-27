@@ -20,7 +20,7 @@ int main() {
 }
 
 /*
-    Just a simple assisting function, that makes right turn from three left turns.
+    Simple assisting function, that makes right turn from three left turns.
     And via using set_step_delay args we are making it non-visible on the field.
 */
 void turn_right() {
@@ -63,6 +63,7 @@ void check_position() {
         }
     }
 }
+
 
 /*
     A function that implements movement to the first control point and completes its execution by extracting a part from it.
