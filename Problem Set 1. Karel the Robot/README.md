@@ -12,11 +12,11 @@ https://git.kpi.fei.tuke.sk/kpi/karel-the-robot
 
 You can use two different ways to compile a program::
 1. Using Makefile:
-```bash
-make task
-```
+  ```bash
+  make task
+  ```
 2. Using command line in bash:
-```bash
-gcc *.c -o * -std=c11 -Werror -Wall -lsuperkarel -lcurses
-```
+  ```bash
+  gcc *.c -o * -std=c11 -Werror -Wall -lsuperkarel -lcurses
+  ```
 `*` is the name of the task.
