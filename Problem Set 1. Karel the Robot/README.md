@@ -12,7 +12,7 @@ programming language](https://en.wikipedia.org/wiki/Karel_(programming_language)
 First, you need to install an open source university [API](https://git.kpi.fei.tuke.sk/kpi/karel-the-robot) called Karel the Robot on your OS.
 
 
-You can use two different ways to compile a program::
+You can use two different ways to compile a program:
 1. Using Makefile:
   ```bash
   make task
