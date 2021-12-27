@@ -17,5 +17,6 @@ make task
 ```
 2.  Using command line in bash:
 ```bash
-gcc -std=c11 -Werror -Wall -lsuperkarel -lcurses
+gcc *.c -o * -std=c11 -Werror -Wall -lsuperkarel -lcurses
 ```
+`*` is the name of the task.
