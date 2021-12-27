@@ -20,3 +20,7 @@ You can use two different ways to compile a program::
   gcc *.c -o * -std=c11 -Werror -Wall -lsuperkarel -lcurses
   ```
 `*` is the name of the task.
+
+## Dependencies
+
+To compile the tasks, you need to have a copy of the `ncurses` library and `gcc-package`.
