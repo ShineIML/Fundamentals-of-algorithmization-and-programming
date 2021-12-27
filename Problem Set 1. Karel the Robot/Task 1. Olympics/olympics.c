@@ -45,7 +45,7 @@ void turn_backwards() {
     A function that checks the environment, and depending on it performs a turn in the right direction.
 */
 void check_position() {
-    if(no_beepers_in_bag()) {
+    if (no_beepers_in_bag()) {
         if (right_is_clear()) {
             turn_right();
         } else if (front_is_blocked() && left_is_clear()) {
