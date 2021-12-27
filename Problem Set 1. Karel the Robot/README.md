@@ -15,7 +15,7 @@ First, you need to install an open source university [API](https://git.kpi.fei.t
 You can use two different ways to compile a program:
 1. Using Makefile:
   ```bash
-  make task
+  make *
   ```
 2. Using command line in bash:
   ```bash
