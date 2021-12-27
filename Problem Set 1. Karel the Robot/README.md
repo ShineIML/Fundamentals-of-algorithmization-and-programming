@@ -11,11 +11,11 @@ First, you need to install an open source university API called Karel the Robot 
 https://git.kpi.fei.tuke.sk/kpi/karel-the-robot
 
 You can use two different ways to compile a program::
-1.  Using Makefile:
+1. Using Makefile:
 ```bash
 make task
 ```
-2.  Using command line in bash:
+2. Using command line in bash:
 ```bash
 gcc *.c -o * -std=c11 -Werror -Wall -lsuperkarel -lcurses
 ```
