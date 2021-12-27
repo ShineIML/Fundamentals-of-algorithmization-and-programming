@@ -7,10 +7,10 @@ programming language. More info at https://en.wikipedia.org/wiki/Karel_(programm
 
 ## Usage
 
-Firstly, you need to install open source university API, called Karel the Robot to make project work properly.
+First, you need to install an open source university API called Karel the Robot on your OS:
 https://git.kpi.fei.tuke.sk/kpi/karel-the-robot
 
-To compile program you can use two different ways:
+You can use two different ways to compile a program::
 1.  Using Makefile:
 ```bash
 make task
