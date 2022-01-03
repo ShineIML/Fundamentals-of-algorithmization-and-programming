@@ -1,6 +1,6 @@
 /*
     All documentation for tasks and functions is in the document:
-    Problem Set 2: Numbers, Arrays.pdf
+    Problem Set 2. Numbers, Arrays.pdf
 */
 
 #include <stdio.h>
