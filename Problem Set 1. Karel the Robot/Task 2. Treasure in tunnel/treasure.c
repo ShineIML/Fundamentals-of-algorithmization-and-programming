@@ -79,7 +79,7 @@ void find_treasure() {
 */
 void come_back() {
     while (beepers_in_bag()) {
-        if(front_is_clear()) {
+        if (front_is_clear()) {
             step();
         }
 

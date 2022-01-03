@@ -1,6 +1,6 @@
 /*
 
-    Task 1: Castle
+    Task 4: Castle
 
     Karel was hired to help repair the damage caused to Castle. 
     So Karel has to repair a set of stone pillars (represented, of course, by brands), 
@@ -20,7 +20,7 @@ void go_n_repair();
 
 int main() {
 
-    turn_on("task_4.kw");
+    turn_on("castle.kw");
     set_step_delay(SPEED);
 
     go_n_repair();
@@ -46,51 +46,51 @@ void repair() {
         step();
     }
     double_left();
-    while(front_is_clear()) {
-        if(!beepers_present()) {
+    while (front_is_clear()) {
+        if (!beepers_present()) {
             put_beeper();
         }
         step();
-        if(no_beepers_present()) {
+        if (no_beepers_present()) {
             put_beeper();
         }
     }
 }
 
 void go_n_repair() {
-    while(front_is_clear()) {
-        while(not_facing_north()) {
+    while (front_is_clear()) {
+        while (not_facing_north()) {
             turn_left();
         }
-        while(front_is_clear()) {
-            if(beepers_present()) {
+        while (front_is_clear()) {
+            if (beepers_present()) {
                 repair();
                 turn_left();
-                if(front_is_clear()) {
+                if (front_is_clear()) {
                     step();
-                    if(front_is_clear()) {
+                    if (front_is_clear()) {
                         turn_left();
                     }
-                } else if(front_is_blocked() && facing_east() && right_is_blocked()) {
+                } else if (front_is_blocked() && facing_east() && right_is_blocked()) {
                     turn_off();
                 }
-                if(front_is_blocked() && facing_east() && right_is_blocked()) {
+                if (front_is_blocked() && facing_east() && right_is_blocked()) {
                     turn_off();
                 }
             }
-            if(front_is_clear()) {
+            if (front_is_clear()) {
                 step();
             }
         }
         double_left();
-        while(front_is_clear()) {
+        while (front_is_clear()) {
             step();
         }
         turn_left();
-        if(front_is_clear()) {
+        if (front_is_clear()) {
             step();
         }
-        if(front_is_blocked()) {
+        if (front_is_blocked()) {
             turn_left();
         }
     }
