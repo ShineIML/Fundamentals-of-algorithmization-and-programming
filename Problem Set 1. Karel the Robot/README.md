@@ -14,7 +14,7 @@ Also, you can build your own world map for some test-cases with [Karel Map Build
 
 You can use two different ways to compile a program:
 
-`*` is the name of the task.
+`*` is the name of the task, which is always referred to as the name of the file where the code is located.
 
 1. Using Makefile:
   ```bash
