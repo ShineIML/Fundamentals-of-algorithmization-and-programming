@@ -6,6 +6,7 @@ created by Richard E. Pattis.
 This is implementation of [Karel the Robot for C
 programming language](https://en.wikipedia.org/wiki/Karel_(programming_language)).
 
+Also, you can build your own world map for some test-cases with [Karel Map Builder](http://karelmapbuilder.surge.sh/)
 
 ## Usage
 
