@@ -41,6 +41,11 @@ void double_left() {
     turn_left();
 }
 
+/*
+
+    A function that implements the restoration of the castle wall
+
+*/
 void repair() {
     while(front_is_clear()) {
         step();
@@ -57,6 +62,13 @@ void repair() {
     }
 }
 
+/*
+
+    The main function that implements restoration of the castle, 
+    which checks each wall for holes and, depending on the result, 
+    either restores the wall or moves to the next wall.
+
+*/
 void go_n_repair() {
     while (front_is_clear()) {
         while (not_facing_north()) {
