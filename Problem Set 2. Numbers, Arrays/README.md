@@ -13,7 +13,9 @@ To compile && run a program you have to run your terminal and type:
 
   ```bash
   gcc arrays.c -o arrays -std=c11 -Werror -Wall -lm
+  ```
   
+  ```bash
   ./arrays
   ```
 
