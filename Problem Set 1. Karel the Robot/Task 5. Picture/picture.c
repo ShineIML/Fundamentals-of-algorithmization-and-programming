@@ -51,13 +51,13 @@ void double_left() {
 }
 
 void turn_south() {
-    while(not_facing_south()) {
+    while (not_facing_south()) {
         turn_left();
     }
 }
 
 void step_forward() {
-    while(front_is_clear()) {
+    while (front_is_clear()) {
         step();
     }
 }
