@@ -18,6 +18,7 @@
 
 #include <superkarel.h>
 #define SPEED 50
+#define SPEED_EQUALS_NULL 0
 
 void turn_right();
 void face_north();
@@ -33,13 +34,13 @@ int main(){
     set_step_delay(SPEED);
     
     go_find_treasure();
-    
+
     turn_off();
     return 0;
 }
 
 void turn_right() {
-    set_step_delay(0);
+    set_step_delay(SPEED_EQUALS_NULL);
     turn_left();
     turn_left();
     set_step_delay(SPEED);
@@ -47,24 +48,24 @@ void turn_right() {
 }
 
 void face_north() {
-    while( not_facing_north() ) {
+    while (not_facing_north()) {
         turn_left();
     }
 }
 
 void face_east() {
-    while( not_facing_east() ) {
+    while (not_facing_east()) {
         turn_left();
     }
 }
 void face_south() {
-    while( not_facing_south() ) {
+    while (not_facing_south()) {
         turn_left();
     }
 }
 
 void face_west() {
-    while( not_facing_west() ) {
+    while (not_facing_west()) {
         turn_left();
     }
 }
@@ -78,25 +79,25 @@ void face_west() {
 
 */
 void go_find_treasure() {
-    while( front_is_clear() && no_beepers_present() ) {
+    while (front_is_clear() && no_beepers_present()) {
         step();
-        if( beepers_present() ) {
+        if (beepers_present()) {
             pick_beeper();
             face_north();
         }
-        if( beepers_present() ) {
+        if (beepers_present()) {
             pick_beeper();
             face_west();
         }
-        if( beepers_present() ) {
+        if (beepers_present()) {
             pick_beeper();
             face_south();
         }
-        if( beepers_present() ) {
+        if (beepers_present()) {
             pick_beeper();
             face_east();
         }
-        if( beepers_present() ) {
+        if (beepers_present()) {
             pick_beeper();
             break;
         }
