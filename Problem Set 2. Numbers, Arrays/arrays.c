@@ -52,7 +52,7 @@ int main() {
     int input[] = {16,17,4,3,5,2};
     int result[6];
     int count = special_numbers(input, 6, result);
-    for(int i = 0; i < count; i++){
+    for (int i = 0; i < count; i++) {
         printf("%d ", result[i]);
     }
     printf("\n");
@@ -74,8 +74,8 @@ float unit_price(const float pack_price, const int rolls_count, const int pieces
     float roll, x, rounded_x;
     float p = 2.0;
 
-    roll = pack_price/rolls_count;
-    x = (roll/pieces_count)*100;
+    roll = pack_price / rolls_count;
+    x = (roll/pieces_count) * 100;
     rounded_x = round(x * pow(10,p)) / pow(10,p);
 
     return rounded_x;
@@ -89,10 +89,10 @@ int collatz(const int number) {
     while (num > count) {
         amount++;
         if (num % 2 == 0) {
-            num/=2;
+            num /= 2;
         }
         else if (num % 2 == 1) {
-            num=3*num+1;
+            num = 3 * num + 1;
         }
     }
 
@@ -102,7 +102,7 @@ int collatz(const int number) {
 int opposite_number(const int n, const int number) {    
     int r;
 
-    r = number - n/2;
+    r = number - n / 2;
     if (r < 0) {
         r += n;
     }
@@ -115,7 +115,7 @@ void counter(const int input_array[], const int array_size, int result_array[2])
     first = 0;
     second = 0;
 
-    for (i = 0; i<array_size; i++) {
+    for (i = 0; i < array_size; i++) {
         if (i % 2 == 0 || i == 0) {
             first += input_array[i];
         }
@@ -172,7 +172,7 @@ int array_max(const int input_array[], const int array_size) {
 }
 
 unsigned long special_counter(const int input_array[], const int array_size) {
-    int i,first,second,result;
+    int i, first,second,result;
     int result_array[2];
     first = 0;
     second = 0;
@@ -181,7 +181,7 @@ unsigned long special_counter(const int input_array[], const int array_size) {
         if (i % 2 == 0 || i == 0) {
             first += input_array[i];
         }
-        else if(i%2==1 || i == 1){
+        else if (i % 2 == 1 || i == 1) {
             second += input_array[i] * input_array[i];
         }
     }
@@ -207,6 +207,6 @@ int special_numbers(const int input[], const int array_size, int result[]) {
             counter++;
         }                                                             
     }
-    
+
     return counter;
 }
