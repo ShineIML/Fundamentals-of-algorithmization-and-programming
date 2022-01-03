@@ -8,6 +8,7 @@
 
     Robot Karel starts at any position, turned at will, and has a sufficient number of marks in his backpack. 
     The dimensions of the world are always odd, the smallest size of the world is 3x3. 
+
 */
 
 #include <superkarel.h>
@@ -103,7 +104,7 @@ void put_n_step() {
 */
 void find_left_middlepoint() {
     while (no_beepers_present()) {
-    step();
+        step();
         if (beepers_present()) {
             double_left();
             step();
