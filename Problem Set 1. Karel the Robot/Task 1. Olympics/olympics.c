@@ -1,6 +1,6 @@
 /*
 
-    Task 1: Orienteering
+    Task 1: Olympics
 
     Robot Karel decided to take part in another discipline at the Olympics. 
     Once again, he will run over obstacles that are different heights, different widths and different distances from each other.

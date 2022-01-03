@@ -1,6 +1,6 @@
 /*
 
-    Task 2: Treasure in the tunnel
+    Task 2: Treasure in tunnel
 
     Robot Karel was given the task of searching for treasure in the tunnel. 
     For the robot world, the tunnel is spiral in shape and the road gradually turns to the left. 
