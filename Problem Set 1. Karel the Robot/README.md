@@ -27,8 +27,8 @@ You can use two different ways to compile a program:
   
 To run the program after compilation you need to type:
 ```bash
-  ./*
-  ```
+./*
+```
 
 ## Dependencies
 
