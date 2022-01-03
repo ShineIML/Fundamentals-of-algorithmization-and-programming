@@ -13,6 +13,9 @@ First, you need to install an open source university [API](https://git.kpi.fei.t
 Also, you can build your own world map for some test-cases with [Karel Map Builder](http://karelmapbuilder.surge.sh/)
 
 You can use two different ways to compile a program:
+
+`*` is the name of the task.
+
 1. Using Makefile:
   ```bash
   make *
@@ -21,7 +24,11 @@ You can use two different ways to compile a program:
   ```bash
   gcc *.c -o * -std=c11 -Werror -Wall -lsuperkarel -lcurses
   ```
-`*` is the name of the task.
+  
+To run the program after compilation you need to type:
+```bash
+  ./*
+  ```
 
 ## Dependencies
 
