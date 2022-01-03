@@ -1,3 +1,17 @@
+/*
+
+    Task 2: Treasure in the tunnel
+
+    Robot Karel was given the task of searching for treasure in the tunnel. 
+    For the robot world, the tunnel is spiral in shape and the road gradually turns to the left. 
+    The treasure is found when the robot finds the mark. 
+    The treasure (mark) does not have to be at the end of the tunnel, 
+    but it can also be located in the middle of the alley, after finding the treasure, 
+    Karel returns to the beginning of the tunnel to its starting position. 
+
+*/
+
+
 #include <superkarel.h>
 #define SPEED 100
 #define SPEED_EQUALS_NULL 0

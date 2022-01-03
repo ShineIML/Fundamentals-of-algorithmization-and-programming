@@ -1,3 +1,13 @@
+/*
+
+    Task 1: Orienteering
+
+    Robot Karel decided to take part in another discipline at the Olympics. 
+    Once again, he will run over obstacles that are different heights, different widths and different distances from each other.
+    However, when he finds the mark, he picks it up and returns to his starting position through obstacles. 
+
+*/
+
 #include <superkarel.h>
 #define SPEED 100
 #define SPEED_EQUALS_NULL 0
@@ -63,7 +73,6 @@ void check_position() {
         }
     }
 }
-
 
 /*
     A function that implements movement to the first control point and completes its execution by extracting a part from it.
