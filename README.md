@@ -8,6 +8,6 @@ Projects that I worked on at the university. All projects were written in pure C
 
 Documentation for the tasks is attached.
 
-## Packages, that I was using to make projects work properly
+## Mandatory packages
 
 gcc make valgrind gdb cgdb cppcheck libncurses5-dev libncurses5 ncurses-doc git cmake pkg-config check
