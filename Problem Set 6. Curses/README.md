@@ -2,7 +2,7 @@
 
 The wording of the assignment
 
-Use the library to ncurses create any program (game, presentation, or other work of art), and the resulting project must meet the following conditions:
+Use the library `ncurses` to create any program (game, presentation, or other work of art), and the resulting project must meet the following conditions:
 
     - The project must contain a 2D world.
     - Together, the project must include at least 3 of the following calls:
