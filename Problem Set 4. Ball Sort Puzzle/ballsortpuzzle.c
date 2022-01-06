@@ -14,7 +14,7 @@ void generator(const int rows, const int columns, char field[rows][columns]) {
     int first_empty = rand() % columns;
     int second_empty = rand() % columns;
 
-    while(first_empty == second_empty) {
+    while (first_empty == second_empty) {
         second_empty = rand() % columns;
     }
 
