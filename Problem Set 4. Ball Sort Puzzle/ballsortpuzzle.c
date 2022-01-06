@@ -27,20 +27,20 @@ void generator(const int rows, const int columns, char field[rows][columns]) {
 
     int r;
 
-    for(int i = 0; i < rows; i++) {
-        for(int j = 0; j < columns; j++) {
-            if(j != first_empty && j != second_empty) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            if (j != first_empty && j != second_empty) {
                 r = rand() % 4;
-                if(r == 0 && star_c != 0) {
+                if (r == 0 && star_c != 0) {
                     star_c -= 1;
                     field[i][j] = symb_arr[r];
-                } else if(r == 1 && dog_c != 0) {
+                } else if (r == 1 && dog_c != 0) {
                     dog_c -= 1;
                     field[i][j] = symb_arr[r];
-                } else if(r == 2 && plus_c != 0) {
+                } else if (r == 2 && plus_c != 0) {
                     plus_c -= 1;
                     field[i][j] = symb_arr[r];
-                } else if(r == 3 && arrow_c != 0) {
+                } else if (r == 3 && arrow_c != 0) {
                     arrow_c -= 1;
                     field[i][j] = symb_arr[r];
                 } else {
@@ -58,7 +58,7 @@ void generator(const int rows, const int columns, char field[rows][columns]) {
 
 void down_possible(const int rows, const int columns, char field[rows][columns], int x, int y) {
 
-    if(x == y) {
+    if (x == y) {
         return;
     }
 
@@ -68,16 +68,16 @@ void down_possible(const int rows, const int columns, char field[rows][columns],
     int row_idx = rows - 1;
     int tmp = 0;
 
-    for(int j = 0; j < rows; j++) {
-        if(field[j][first_column_idx] != ' ') {
+    for (int j = 0; j < rows; j++) {
+        if (field[j][first_column_idx] != ' ') {
             c = field[j][first_column_idx];
             tmp = j;
             break;
         }
     }
 
-    for(int j = row_idx; j >= 0; j--) {
-        if( (field[j][second_column_idx] == ' ') && (j == row_idx) ) {
+    for (int j = row_idx; j >= 0; j--) {
+        if ( (field[j][second_column_idx] == ' ') && (j == row_idx) ) {
             field[j][second_column_idx] = c;
             field[tmp][first_column_idx] = ' ';
             break;
@@ -89,7 +89,7 @@ void down_possible(const int rows, const int columns, char field[rows][columns],
                 field[tmp][first_column_idx] = ' ';
                 break;
             }
-        } else if(j == 0) {
+        } else if (j == 0) {
             break;
         }
     }
@@ -102,10 +102,10 @@ bool check(const int rows, const int columns, char field[rows][columns]) {
     int counter;
     int full_counter = 0;
 
-    for(int i = 0; i < columns; i++) {
+    for (int i = 0; i < columns; i++) {
         counter = 0;
-        for(int j = 0; j < rows; j++) {
-            if(field[j][i] == field[j+1][i]) {
+        for (int j = 0; j < rows; j++) {
+            if (field[j][i] == field[j+1][i]) {
                 counter++;
             }
         }
@@ -114,7 +114,7 @@ bool check(const int rows, const int columns, char field[rows][columns]) {
         }
     }
 
-    if(full_counter == columns) {
+    if (full_counter == columns) {
         return true;
     }
 
@@ -122,8 +122,8 @@ bool check(const int rows, const int columns, char field[rows][columns]) {
 }
 
 void game_field(const int rows, const int columns, char field[rows][columns]) {
-    for(int i = 0; i < rows; i++) {
-        for(int j = 0; j < columns; j++) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
             printf("|%c|", field[i][j]);
         }
         printf("\n");
@@ -143,7 +143,7 @@ void ball_sort_puzzle() {
 
     game_field(4, 6, field);
 
-    if(check(4, 6, field) == true) {
+    if (check(4, 6, field) == true) {
         return;
     };
 
