@@ -82,7 +82,7 @@ void down_possible(const int rows, const int columns, char field[rows][columns],
             field[tmp][first_column_idx] = ' ';
             break;
         } else if ( (field[j][second_column_idx] == ' ') && (j < row_idx) ) {
-            if(field[j+1][second_column_idx] != c) {
+            if (field[j+1][second_column_idx] != c) {
                 break;
             } else {
                 field[j][second_column_idx] = c;
