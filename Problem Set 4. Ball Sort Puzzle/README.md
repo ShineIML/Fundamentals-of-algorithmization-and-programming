@@ -1,5 +1,7 @@
 ## Ball Sort Puzzle
 
+Probably every one has already played or heard of a game called Ball sort puzzle. The game starts with balls of different colors swept in several reels. The aim of the game is for the player to gradually place them in reels according to color. However, the player may not place balls of colors other than their own. If all the balls are stacked, the player wins. 
+
 Goals
 
     - Create custom features as specified.
