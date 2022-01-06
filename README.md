@@ -4,8 +4,9 @@ Technical University of Kosice, Slovakia.
 Written by Igor Rabin.
 
 ## About
-Projects that I worked on at the university. All projects were written in pure C language using some university APIs.
+Projects I worked on at the university. 
 
+All projects were written in pure C using some university APIs.
 Documentation for the tasks is attached.
 
 ## Mandatory packages
